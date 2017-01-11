@@ -6,7 +6,7 @@ reload(sys)
 sys.setdefaultencoding("utf-8")
 
 
-class REDIS_INTER:
+class REDIS:
 
     __redis = ''
     # 连接redis 默认参数

@@ -2,8 +2,7 @@
 #import urllib
 #import re
 #import urllib2
-#from lxml import etree
-#################################
+#from lxml import etree #################################
 import sys
 import os
 reload(sys)
@@ -142,6 +141,11 @@ def getAllStep():
     myFile.close()
 #######################################################################
 if __name__ == "__main__":
+
+    if sys.argv < 2:
+        print ("python %s [put|get]" %(__FILE__))
+        sys.exit(1)
+
     cmd = sys.argv[1]
     if cmd == 'put':
         url = 'http://www.meishichina.com/'

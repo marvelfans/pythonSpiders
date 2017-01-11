@@ -15,12 +15,13 @@ class SELENIUM:
     # 构造函数 获取网页源代码
     def __init__(self, url):
         self.__url = url
-        self.__driver = webdriver.PhantomJS(executable_path="/Users/zjz/tools/phantomjs")
+        self.__driver = webdriver.PhantomJS(executable_path="/data/zhaojingzhen/tools/phantomjs-2.1.1-linux-x86_64/bin/phantomjs")
         self.__driver.get(self.__url)
         time.sleep(1)
 
         # 浏览网页HTML代码
         # print self.__driver.page_source
+        # sys.exit(1)
     
     # 通过xpath获取指定文本
     def getText(self, xpath):
